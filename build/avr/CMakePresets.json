@@ -1,0 +1,52 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "avr-debug",
+      "displayName": "AVR Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/obj/debug",
+      "toolchainFile": "${sourceDir}/avr-gcc-toolchain.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "AVR_TOOLCHAIN_DIR": "C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin",
+        "SOS_MCU": "atmega1284p",
+        "SOS_F_CPU": "16000000UL"
+      }
+    },
+    {
+      "name": "avr-release",
+      "displayName": "AVR Release",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/obj/release",
+      "toolchainFile": "${sourceDir}/avr-gcc-toolchain.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "AVR_TOOLCHAIN_DIR": "C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin",
+        "SOS_MCU": "atmega1284p",
+        "SOS_F_CPU": "16000000UL"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "avr-debug",
+      "configurePreset": "avr-debug",
+      "targets": [
+        "sos_avr_hex"
+      ]
+    },
+    {
+      "name": "avr-release",
+      "configurePreset": "avr-release",
+      "targets": [
+        "sos_avr_hex"
+      ]
+    }
+  ]
+}

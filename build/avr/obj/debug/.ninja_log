@@ -1,0 +1,9 @@
+# ninja log v7
+18	100	7907145378504342	CMakeFiles/sOS_avr.dir/C_/projects/sOS/examples/LED_blinker.cpp.obj	2747785b1135784b
+29	108	7907145378613364	CMakeFiles/sOS_avr.dir/C_/projects/sOS/src/sOS_timer_manager.cpp.obj	3cac208d0eded340
+24	111	7907145378563935	CMakeFiles/sOS_avr.dir/C_/projects/sOS/examples/product.cpp.obj	29e2c01ee55b3c64
+21	116	7907145378534354	CMakeFiles/sOS_avr.dir/C_/projects/sOS/examples/keep_alive.cpp.obj	9c5290e9cbde0283
+27	125	7907145378585182	CMakeFiles/sOS_avr.dir/C_/projects/sOS/src/sOS_task_manager.cpp.obj	ddfd78336de03d52
+125	220	7907145379570262	C:/projects/sOS/build/avr/bin/sOS_avr	63da48853b688696
+220	294	7907145381241103	C:/projects/sOS/build/avr/bin/sOS_atmega1284p.hex	431e0253cee52504
+220	294	7907145381241103	C:/projects/sOS/build/avr/bin/sOS_atmega1284p.lst	431e0253cee52504

@@ -1,4 +1,4 @@
-build/
+bin/
 .vs/
 x64/
 sOS/x64/
